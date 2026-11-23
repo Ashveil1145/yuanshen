@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Prologue - Let's Date, Senpai</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+            font-family: 'Quicksand', sans-serif;
+            color: white;
+        }
+
+        .intro-screen {
+            width: 100%;
+            min-height: 100vh;
+            background-color: black;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            animation: screenFade 2s ease forwards;
+        }
+
+        /* =========================
+           Story Text
+        ========================= */
+
+        .story-text {
+            width: 75%;
+            max-width: 850px;
+            text-align: left;
+        }
+
+        /* 每一段文字 */
+        .story-line {
+            margin-bottom: 38px;
+
+            opacity: 0;
+            transform: translateY(-15px);
+
+            animation: textReveal 1.2s ease forwards;
+        }
+
+        /* 英文主文本 */
+        .english {
+            color: white;
+            font-size: 23px;
+            line-height: 1.6;
+            margin-bottom: 5px;
+        }
+
+        /* 中文辅助文本 */
+        .chinese {
+            color: #888888;
+            font-size: 15px;
+            line-height: 1.5;
+        }
+
+        /* =========================
+           Animation Delay
+        ========================= */
+
+        .story-line:nth-child(1) {
+            animation-delay: 1.5s;
+        }
+
+        .story-line:nth-child(2) {
+            animation-delay: 3s;
+        }
+
+        .story-line:nth-child(3) {
+            animation-delay: 4.5s;
+        }
+
+        .story-line:nth-child(4) {
+            animation-delay: 6s;
+        }
+
+        .story-line:nth-child(5) {
+            animation-delay: 7.5s;
+        }
+
+        .story-line:nth-child(6) {
+            animation-delay: 9s;
+        }
+        .continue-button {
+            margin-top: 15px;
+            color: #cccccc;
+            font-size: 16px;
+            text-decoration: none;
+
+            opacity: 0;
+            animation: textReveal 1s ease forwards;
+            animation-delay: 11s;
+
+            transition: 0.3s;
+        }
+
+        .continue-button:hover {
+            color: white;
+        }
+
+        @keyframes screenFade {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes textReveal {
+            from {
+                opacity: 0;
+                transform: translateY(-15px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="intro-screen">
+
+        <div class="story-text">
+
+            <div class="story-line">
+                <p class="english">Spring.</p>
+                <p class="chinese">春天。</p>
+            </div>
+
+            <div class="story-line">
+                <p class="english">
+                    For most people, spring is a season full of hope.
+                </p>
+
+                <p class="chinese">
+                    对于大多数人来说，这是一个充满希望的季节。
+                </p>
+            </div>
+
+            <div class="story-line">
+                <p class="english">
+                    Cherry blossoms bloom, the weather gets warmer,
+                    and a new chapter seems to begin.
+                </p>
+
+                <p class="chinese">
+                    樱花盛开，天气转暖，新的生活似乎也即将开始。
+                </p>
+            </div>
+
+            <div class="story-line">
+                <p class="english">But for me...</p>
+                <p class="chinese">而对于我来说……</p>
+            </div>
+
+            <div class="story-line">
+                <p class="english">
+                    Spring is just another season when I have to
+                    wake up early for school.
+                </p>
+
+                <p class="chinese">
+                    春天不过是一个需要早起上学的季节。
+                </p>
+            </div>
+
+            <div class="story-line">
+                <p class="english">
+                    At least, that's what I thought before I met her.
+                </p>
+
+                <p class="chinese">
+                    至少，在遇见她之前，我一直这么认为。
+                </p>
+            </div>
+
+        </div>
+
+        <a href="chapter1-2.html" class="continue-button">
+            Continue / 继续
+        </a>
+
+    </div>
+
+</body>
+
+</html>

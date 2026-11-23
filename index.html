@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Let's Date, Senpai</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="game-container">
+        <div class="title-box">
+            <h1>Let's Date, Senpai</h1>
+            <p>Try to quit it！</p>
+        </div>
+        <div class="menu">
+            <a href="chapter1.html" class="menu-button">
+                START
+            </a>
+            <button id="load-btn">
+            QUIT
+            </button>
+        </div>
+        <div class="footer">
+            <p>test 1.0</p>
+            <p>历经百战二游女（Shirley）/Nate</p>
+
+        </div>
+
+    </div>
+
+
+    <script>
+    const button = document.getElementById('load-btn');
+
+    button.onmouseover = function() {
+
+        const maxX = window.innerWidth - button.offsetWidth;
+        const maxY = window.innerHeight - button.offsetHeight;
+
+        const randomX = Math.floor(Math.random() * maxX);
+        const randomY = Math.floor(Math.random() * maxY);
+
+        button.style.left = randomX + 'px';
+        button.style.top = randomY + 'px';
+
+    };
+</script>
+
+</body>
+</html>

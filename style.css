@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image:url("naiwafm.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    font-family: 'Quicksand', sans-serif;
+    color: #8b4563;
+}
+.game-container {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title-box {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.title-box h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #d45d85;
+
+    margin-bottom: 15px;
+}
+
+.title-box p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #a65c78;
+
+    letter-spacing: 2px;
+}
+.menu {
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+    width: 220px;
+}
+.menu-button {
+    padding: 15px;
+
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+
+    color: white;
+    background-color: #e98aaa;
+
+    border: 2px solid #d9799b;
+    border-radius: 25px;
+
+    text-align: center;
+    text-decoration: none;
+
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.menu-button:hover {
+    background-color: #d45d85;
+    transform: scale(1.05);
+}
+#load-btn {
+    position: fixed;
+
+    width: 220px;
+    top: 75%;
+    left: calc(50% - 110px);
+
+    padding: 15px;
+
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+
+    color: white;
+    background-color: #e98aaa;
+
+    border: 2px solid #d9799b;
+    border-radius: 25px;
+
+    cursor: pointer;
+
+    transition: top 0.2s, left 0.2s;
+}
+.footer {
+    position: absolute;
+    bottom: 20px;
+
+    width: 100%;
+
+    text-align: center;
+    color: #000000;
+
+    font-size: 12px;
+    line-height: 1.8;
+}
+.dialogue-box {
+    width: 100%;
+    min-height: 190px;
+
+    background-image: url("bg1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border: 1px solid #777777;
+    border-radius: 8px;
+
+    padding: 25px 35px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.transition-content {
+    text-align: center;
+}
+
+.transition-chinese {
+    color: #dddddd;
+    font-size: 16px;
+    margin-top: 12px;
+    letter-spacing: 2px;
+    opacity: 0;
+}
+.fade-in .transition-chinese {
+    animation: fadeIn 2s forwards;
+}
+.fade-out .transition-chinese {
+    animation: fadeOut 2s forwards;
+}
